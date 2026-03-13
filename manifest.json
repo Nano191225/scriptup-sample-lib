@@ -1,0 +1,45 @@
+{
+	"format_version": 3,
+	"header": {
+		"name": "scriptup-sample-lib (lib)",
+		"description": "scriptup-sample-lib (lib)",
+		"uuid": "7e60e964-0b20-46d5-90cd-bca5341e92a5",
+		"version": "0.1.0",
+		"min_engine_version": "1.26.3"
+	},
+	"metadata": {
+		"authors": [
+			"YOUR NAME HERE"
+		],
+		"url": "https://example.com/your-project",
+		"generated_with": {
+			"nano191225-scriptup": [
+				"1.2.0"
+			]
+		}
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "bcfd3b81-024f-45b5-85a8-f5a0eebeec59",
+			"version": "0.1.0"
+		},
+		{
+			"type": "script",
+			"uuid": "7f813e76-db2b-42c8-922f-f087bbaa8cfc",
+			"version": "0.1.0",
+			"language": "javascript",
+			"entry": "scripts/main.js"
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.6.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.1.0-beta"
+		}
+	]
+}
