@@ -36,5 +36,8 @@ jobs:
       - name: Build
         run: pnpm run build
 
+      - name: Ensure export footer in d.ts
+        run: node .github/workflows/ensure-dts-export.js
+
       - name: Publish package
         run: pnpm publish --no-git-checks

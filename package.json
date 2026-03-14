@@ -1,14 +1,18 @@
 {
   "name": "scriptup-sample-lib",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "exports": {
-    ".": "./dist/main.js"
+    ".": {
+      "types": "./dist/main.d.ts",
+      "default": "./dist/main.js"
+    }
   },
   "main": "./dist/main.js",
-  "prepublishOnly": "scriptup build --release",
+  "types": "./dist/main.d.ts",
+  "prepublishOnly": "scriptup build --release && node .github/workflows/ensure-dts-export.js",
   "scripts": {
-    "build": "scriptup build --release",
+    "build": "node C:\\Users\\Nano\\Documents\\Rust\\scriptup\\dist build --release",
     "watch": "scriptup build --watch"
   },
   "dependencies": {},

@@ -7,3 +7,4 @@ declare module "@minecraft/server" {
     readonly health: number | undefined;
   }
 }
+export {};
